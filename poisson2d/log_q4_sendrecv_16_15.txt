@@ -1,0 +1,52 @@
+Grid size: 15 x 15
+Using sendrecv communication
+Rank 0: Coords = (0,0), Domain = [1:4, 1:4], Neighbors = L:-1 R:4 B:-1 T:1
+Rank 1: Coords = (0,1), Domain = [1:4, 5:8], Neighbors = L:-1 R:5 B:0 T:2
+Rank 2: Coords = (0,2), Domain = [1:4, 9:12], Neighbors = L:-1 R:6 B:1 T:3
+Rank 3: Coords = (0,3), Domain = [1:4, 13:15], Neighbors = L:-1 R:7 B:2 T:-1
+Rank 4: Coords = (1,0), Domain = [5:8, 1:4], Neighbors = L:0 R:8 B:-1 T:5
+Rank 5: Coords = (1,1), Domain = [5:8, 5:8], Neighbors = L:1 R:9 B:4 T:6
+Rank 6: Coords = (1,2), Domain = [5:8, 9:12], Neighbors = L:2 R:10 B:5 T:7
+Rank 7: Coords = (1,3), Domain = [5:8, 13:15], Neighbors = L:3 R:11 B:6 T:-1
+Rank 8: Coords = (2,0), Domain = [9:12, 1:4], Neighbors = L:4 R:12 B:-1 T:9
+Rank 9: Coords = (2,1), Domain = [9:12, 5:8], Neighbors = L:5 R:13 B:8 T:10
+Rank 10: Coords = (2,2), Domain = [9:12, 9:12], Neighbors = L:6 R:14 B:9 T:11
+Rank 11: Coords = (2,3), Domain = [9:12, 13:15], Neighbors = L:7 R:15 B:10 T:-1
+Rank 12: Coords = (3,0), Domain = [13:15, 1:4], Neighbors = L:8 R:-1 B:-1 T:13
+Rank 13: Coords = (3,1), Domain = [13:15, 5:8], Neighbors = L:9 R:-1 B:12 T:14
+Rank 14: Coords = (3,2), Domain = [13:15, 9:12], Neighbors = L:10 R:-1 B:13 T:15
+Rank 15: Coords = (3,3), Domain = [13:15, 13:15], Neighbors = L:11 R:-1 B:14 T:-1
+
+======> Running with sendrecv communication (fixed 2000 iterations)
+
+(myid 0) iteration: 0, glob_diff: 3.479595e-02
+(myid 0) iteration: 100, glob_diff: 2.901169e-07
+(myid 0) iteration: 200, glob_diff: 1.236348e-10
+(myid 0) iteration: 300, glob_diff: 5.268859e-14
+(myid 0) iteration: 400, glob_diff: 2.245393e-17
+(myid 0) iteration: 500, glob_diff: 9.569028e-21
+(myid 0) iteration: 600, glob_diff: 4.077883e-24
+(myid 0) iteration: 700, glob_diff: 1.736145e-27
+(myid 0) iteration: 800, glob_diff: 8.045031e-31
+(myid 0) iteration: 900, glob_diff: 1.925930e-34
+(myid 0) iteration: 1000, glob_diff: 0.000000e+00
+(myid 0) iteration: 1100, glob_diff: 0.000000e+00
+(myid 0) iteration: 1200, glob_diff: 0.000000e+00
+(myid 0) iteration: 1300, glob_diff: 0.000000e+00
+(myid 0) iteration: 1400, glob_diff: 0.000000e+00
+(myid 0) iteration: 1500, glob_diff: 0.000000e+00
+(myid 0) iteration: 1600, glob_diff: 0.000000e+00
+(myid 0) iteration: 1700, glob_diff: 0.000000e+00
+(myid 0) iteration: 1800, glob_diff: 0.000000e+00
+(myid 0) iteration: 1900, glob_diff: 0.000000e+00
+DONE! (iterations: 2000)
+Run took 0.193421 s
+L2 squared error (sum): 3.798367980368e+00
+Total internal points: 225
+Normalized L2 error: 1.299293479869e-01
+Solution written to q4_solution.txt
+
+Boundary verification:
+u(0,0.5) = 0.400000 (should be 0.400000)
+u(1,0.5) = 0.117647 (should be 0.117647)
+u(0.5,1) = 0.307692 (should be 0.307692)

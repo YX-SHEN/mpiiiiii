@@ -1,0 +1,40 @@
+Grid size: 15 x 15
+Using sendrecv communication
+Rank 0: Coords = (0,0), Domain = [1:8, 1:8], Neighbors = L:-1 R:2 B:-1 T:1
+Rank 1: Coords = (0,1), Domain = [1:8, 9:15], Neighbors = L:-1 R:3 B:0 T:-1
+Rank 2: Coords = (1,0), Domain = [9:15, 1:8], Neighbors = L:0 R:-1 B:-1 T:3
+Rank 3: Coords = (1,1), Domain = [9:15, 9:15], Neighbors = L:1 R:-1 B:2 T:-1
+
+======> Running with sendrecv communication (fixed 2000 iterations)
+
+(myid 0) iteration: 0, glob_diff: 3.479595e-02
+(myid 0) iteration: 100, glob_diff: 2.901169e-07
+(myid 0) iteration: 200, glob_diff: 1.236348e-10
+(myid 0) iteration: 300, glob_diff: 5.268859e-14
+(myid 0) iteration: 400, glob_diff: 2.245393e-17
+(myid 0) iteration: 500, glob_diff: 9.569028e-21
+(myid 0) iteration: 600, glob_diff: 4.077883e-24
+(myid 0) iteration: 700, glob_diff: 1.736145e-27
+(myid 0) iteration: 800, glob_diff: 8.045031e-31
+(myid 0) iteration: 900, glob_diff: 1.925930e-34
+(myid 0) iteration: 1000, glob_diff: 0.000000e+00
+(myid 0) iteration: 1100, glob_diff: 0.000000e+00
+(myid 0) iteration: 1200, glob_diff: 0.000000e+00
+(myid 0) iteration: 1300, glob_diff: 0.000000e+00
+(myid 0) iteration: 1400, glob_diff: 0.000000e+00
+(myid 0) iteration: 1500, glob_diff: 0.000000e+00
+(myid 0) iteration: 1600, glob_diff: 0.000000e+00
+(myid 0) iteration: 1700, glob_diff: 0.000000e+00
+(myid 0) iteration: 1800, glob_diff: 0.000000e+00
+(myid 0) iteration: 1900, glob_diff: 0.000000e+00
+DONE! (iterations: 2000)
+Run took 0.031659 s
+L2 squared error (sum): 3.798367980368e+00
+Total internal points: 225
+Normalized L2 error: 1.299293479869e-01
+Solution written to q4_solution.txt
+
+Boundary verification:
+u(0,0.5) = 0.400000 (should be 0.400000)
+u(1,0.5) = 0.117647 (should be 0.117647)
+u(0.5,1) = 0.307692 (should be 0.307692)
